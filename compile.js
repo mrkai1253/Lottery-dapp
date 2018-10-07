@@ -4,8 +4,8 @@ const solc = require('solc'); //The solidity compiler
 
 
 //for different os
-const inboxPath = path.resolve(__dirname,'contracts','inbox.sol')
+const inboxPath = path.resolve(__dirname,'contracts','lottery.sol')
 const source = fs.readFileSync(inboxPath, 'utf8');
 
 
-module.exports = solc.compile(source, 1).contracts[':Inbox']; // 1 for the number of contracts
+module.exports = solc.compile(source, 1).contracts[':Lottery']; // 1 for the number of contracts
